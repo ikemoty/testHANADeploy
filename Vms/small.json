@@ -128,7 +128,7 @@
         "api-version": "2017-06-01",
         "api-version-vm": "2017-12-01",
         "mode": "Push",
-        "baseUri": "https://raw.githubusercontent.com/AzureCAT-GSI/SAP-HANA-ARM/master/",
+        "baseUri": "https://raw.githubusercontent.com/ikemoty/testHANADeploy/master/",
         "nicName": "[if (equals(parameters('IPAllocationMethod'),'Static'), concat(parameters('vmName'),'-static'), concat(parameters('vmName'),'-dynamic'))]",
         "subnetRef": "[parameters('HANASubnetRef')]",
         "OperatingSystemSpec": {
@@ -137,7 +137,6 @@
             "sku": "[if (contains(parameters('OperatingSystem'),'12 SP3'),'12-SP3',if (contains(parameters('OperatingSystem'),'12 SP2'),'12-SP2','7.2'))]"
         },
         "diskConfig": "[variables(concat('diskConfig_', parameters('vmSize')))]",
-        
         "diskConfig_Standard_E8s_v3": {
             "shared": 511,
             "sap": 63,
