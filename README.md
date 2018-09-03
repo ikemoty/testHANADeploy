@@ -91,7 +91,7 @@ Parameter name | Required | Description | Default Value | Allowed Values
 -------------- | -------- | ----------- | ------------- | --------------
 VM Name |Yes |Name of the HANA Virtual Machine. | None | No restrictions
 HANA Jumpbox |Yes |Defines whether to create a Windows Server with HANA Studio installed. | None | No Restrictions
-VM Size |No |Defines the size of the Azure VM for the HANA server. | Standard_GS5 | Standard_GS5, Standard_M64s, Standard_M64ms, Standard_M128s, Standard_M128ms, Standard_E16s_v3, Standard_E32s_v3, Standard_E64s_v3 | No restrictions
+VM Size |No |Defines the size of the Azure VM for the HANA server. | Standard_GS5 | Standard_GS5, Standard_M64s, Standard_M64ms, Standard_M128s, Standard_M128ms, Standard_E8s_v3, Standard_E16s_v3, Standard_E32s_v3, Standard_E64s_v3 | No restrictions
 Write Accelerator |Yes |Whether to enable the M series write accelerator. | no | yes, no
 Network Name |No |Name of the Azure VNET to be provisioned | ra-hana-vnet | No restrictions
 Address Prefixes |No |Address prefix for the Azure VNET to be provisioned | 10.0.0.0/16 | No restrictions
